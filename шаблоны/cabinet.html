@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>B`n`J personal cabinet</title>
+	<meta encoding="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css\styels_for_pec.css">
+</head>
+<body>
+<header>
+	<ul class="user_header">
+		<li><img class="user-photo"></li>
+		<li><span class="user-name"></span></li>
+		<li>
+		<details>
+			<summary></summary>
+		<ul class="side-bar-options">
+			<li><a href="cabinet.html">Профиль</a></li>
+			<li><a href="">Kалендарь</a></li>
+			<li><a href="massage_board.html">Чат</a></li>
+			<li><a href="">Репетиционная комната</a></li>
+			<li><a href="chat_rulet.html">Чат-рулетка</a></li>
+		</ul>
+		</details>
+		</li>
+	</ul>
+</header>
+<main class="container">
+	<aside class="short-user-data">
+		<table class="short-user-data-table">
+			<tr class="genre">
+				<td class="property">Жанры:</td><td class="value" id="genre-list"></td>
+			</tr>
+			<tr class="instruments"> 
+				<td class="property">Инструменты:</td><td class="value" id="instruments-list"></td>
+			</tr>
+			<tr class="favourite-bands">
+				<td class="property">Любимые группы:</td><td class="value" id="favourite-bands-list"></td>
+			</tr>
+			<tr class="songs property">
+				<td class="property">Репертуар:</td><td class="songs-list-td value">
+					<input type="text" name="rep_search" placeholder="Поиск" id="rep_search">
+						<ul  id="songs-list"></ul>
+				</td>
+			</tr>
+		</table>
+	</aside>
+	<article class="main-info">
+		<section class="post-creator">
+				<textarea placeholder="Новая запись" rows="2" noscroll="true"></textarea>
+				<button class="add-file audio" style="visibility: hidden;"></button>
+			<button class="submit" >опубликовать</button>
+		</section>
+		<section class="main-info-adder"></section>
+	</article>
+</main>
+</body>
+<script type="text/javascript" src="JS/pc2.js"></script>
+</html>

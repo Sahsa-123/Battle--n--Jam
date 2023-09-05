@@ -1,0 +1,113 @@
+/*полиграфия*/
+main{
+	background-color: white;
+	box-sizing:border-box;
+	width: 80%;
+	border: 0.1em solid black;
+	border-radius: 1em;
+	margin: 0px auto 5%;
+	opacity: 0.85;
+}
+body{
+	background:url('photoes/wall_paper.jpg');
+	margin: 0px;
+	text-align: center;
+	font-size: 2vmax;
+}
+/*Заголовок*/
+header{
+	width: 99%;
+	box-sizing: border-box;
+	margin: 0.5em auto 1em;
+	border-radius: 1em;
+	padding: 0.5em 0px;
+	background-color:rgb(250, 250, 250) ;
+	opacity: 0.85;
+}
+header li{
+	vertical-align: middle;
+}
+/*Заголовок*/
+main h2{
+	margin-top: 0.6em;
+	margin-bottom: 0.6em;
+}
+main p{
+	margin:0px;
+}
+main section{
+	margin: 1em 0px;
+}
+/*полиграфия*/
+
+/*стили изображения*/
+ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+li{
+	display: inline;
+}
+li>h1{
+	display: inline;
+}
+img{
+	height: 7vmax;
+	width:  7vmax;
+	border-radius: 50%;
+	border: solid black 0.1vmax;
+}
+/*стили изображения*/
+
+/*стили формы*/
+main input{
+	margin-bottom: 0.5em;
+	margin-top: 0px;
+	font-size: 1em;
+}
+summary{
+	outline: 0;
+}
+details summary::marker {
+  display: none;
+}
+details {
+	cursor: pointer;
+    outline: 0;
+    outline-offset: 0;
+}
+summary::before{
+	content: "\266B";
+}
+section.genre{
+	width: 40%;
+	margin: 0px auto;
+}
+section.instrument{
+	width: 40%;
+	margin: 1.1em auto;
+	text-align: left;
+}
+.sub_h{
+	text-align: center;
+	font-weight: 600;
+}
+details[open] {
+	text-align: left;
+}
+details[open]>summary {
+	text-align: center;
+}
+input[type="submit"]{
+	border-radius: 0.5em;
+	padding: 0.25em;
+	border-style: solid;
+	outline: none;
+	opacity: 1;
+}
+input[type="submit"]:hover{
+	background-color: white;
+	opacity: 1.0;
+}
+/*стили формы*/

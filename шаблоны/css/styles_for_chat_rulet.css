@@ -1,0 +1,181 @@
+/*полиграфия*/
+html:root{
+	font-size: 2.5vh;
+}
+html, body{
+	margin: 0px;
+	padding: 0px;
+	background-color: lightgrey;
+}
+section::-webkit-scrollbar  {
+  width: 0;
+}
+/*полиграфия*/
+
+/*шапка*/
+header{
+	border-bottom:0.01rem solid black;
+	box-sizing: border-box;
+	background-color: white;
+	height: 10vh;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+}
+header>ul.user_header{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	height: 10vh;
+}
+header>ul.user_header>li{
+	box-sizing: border-box;
+	display: inline-block;
+	max-height: 8vh;
+	margin:1vh 0px 1vh 1vh;
+	vertical-align: middle;
+}
+header>ul.user_header>li>input{
+	vertical-align: middle;
+}
+header>ul.user_header>li>img.user-photo{
+	box-sizing: border-box;
+	height: 8vh;
+	width: 8vh;
+	border-radius: 50%;
+}
+header ul.user_header>li:last-child{
+	position: absolute;
+	right: 0px;
+	margin-top:0px; 
+}
+/*Выпадающее меню*/
+header ul ul.side-bar-options{
+	list-style: none;
+}
+header ul details[open] summary:focus{
+    outline: none;
+}
+header ul summary::marker{
+	content :"\2630";
+	font-size: 6vh;
+}
+header ul summary{
+	text-align: right;
+	cursor:pointer;
+}
+header details[open]{
+	background-color: white;
+	height: 100vh;
+	border-left:0.1rem solid black;
+}
+header details[open]>ul.side-bar-options>li{
+	text-align: center;
+	border-bottom: 0.1rem solid white;
+	padding: 0.25rem;
+}
+header details[open]>ul{
+	box-sizing: border-box;
+	background-color: lightgrey;
+	padding: 0px;
+	cursor: pointer;
+	width: 15rem;
+	margin-top:1.3rem;
+}
+header ul details[open] ul a{
+	text-decoration:none;
+	color: black;
+	display: inline-block;
+	width: 100%;
+}
+header details[open] ul li:hover{
+	box-shadow: inset 0px 0px 0.1em 0.1em white;
+}
+/*Выпадающее меню*/
+/*шапка*/
+
+/*Чат*/
+section.chat{
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	height: 80vh;
+	margin: 0px;
+	padding:6vh 0px;
+}
+section.redach_form[is_closed="hidden"],section.guest[is_closed="hidden"]{
+	display: none;
+}
+section.guest,section.redach_form{
+	box-sizing: border-box;
+	display: block;
+	width: 47%;
+	height: 68vh;
+	background-color:white;
+}
+section.redach_form{
+	margin: 0px 2% 0px 1%;
+}
+section.guest{
+	margin: 0px 1% 0px 2%
+}
+/*Вкладка взаимодействия*/
+section.redach_form ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+section.redach_form{
+	position: relative;
+}
+.close,.save{
+	position: absolute;
+	bottom: 0px;
+}
+.close{
+	left: 0px
+}
+.save{
+	right:0px;
+}
+/*Вкладка взаимодействия*/
+/*Чат*/
+
+/*Панель контроля*/
+section.controls{
+	box-sizing: border-box;
+	height: 10vh;
+	background-color: white;
+	border-top:0.01rem solid black;
+}
+section.controls ul.buttons{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	padding:2.5vh 0px;
+}
+section.controls ul.buttons>li{
+	display: inline-block;
+	box-sizing: border-box;
+	width: 25%;
+	text-align: center;
+}
+section.controls ul.buttons>li>img{
+	border-radius: 50%;
+	width: 5vh;
+	height: 5vh;
+}
+section.controls ul.buttons>li.swap>img{
+	border-radius: 0px;
+}
+section.controls ul.buttons>li>img:hover{	
+	opacity: 0.5;
+	transition: 0.3s;
+}
+section.controls ul.buttons>li>img:action{
+	opacity: 0;
+}
+/*Панель контроля*/

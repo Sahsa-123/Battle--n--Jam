@@ -1,0 +1,214 @@
+/*полиграфия*/
+html:root{
+	font-size: 1.25vmax;
+}
+html, body{
+	margin: 0px;
+	padding: 0px;
+	background-color: lightgrey;
+}
+body::-webkit-scrollbar,.post-creator>textarea::-webkit-scrollbar  {
+  width: 0;
+}
+/*полиграфия*/
+
+/*шапка*/
+header{
+	border-bottom:0.01rem solid black;
+	box-sizing: border-box;
+	background-color: white;
+	height: 10vh;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+}
+header>ul.user_header{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	height: 10vh;
+}
+header>ul.user_header>li{
+	box-sizing: border-box;
+	display: inline-block;
+	max-height: 8vh;
+	margin:1vh 0px 1vh 1vh;
+	vertical-align: middle;
+}
+header>ul.user_header>li>img.user-photo{
+	box-sizing: border-box;
+	height: 8vh;
+	width: 8vh;
+	border-radius: 50%;
+}
+header ul.user_header>li:last-child{
+	position: absolute;
+	right: 0px;
+	margin-top:0px; 
+}
+/*Выпадающее меню*/
+header ul ul.side-bar-options{
+	list-style: none;
+}
+header ul details[open] summary:focus{
+    outline: none;
+}
+header ul summary::marker{
+	content :"\2630";
+	font-size: 6vh;
+}
+header ul summary{
+	text-align: right;
+	cursor:pointer;
+}
+header details[open]{
+	background-color: white;
+	height: 100vh;
+	border-left:0.1rem solid black;
+}
+header details[open]>ul.side-bar-options>li{
+	text-align: center;
+	border-bottom: 0.1rem solid white;
+	padding: 0.25rem;
+}
+header details[open]>ul{
+	box-sizing: border-box;
+	background-color: lightgrey;
+	padding: 0px;
+	cursor: pointer;
+	width: 15rem;
+	margin-top:1.3rem;
+}
+header ul details[open] ul a{
+	text-decoration:none;
+	color: black;
+	display: inline-block;
+	width: 100%;
+}
+header details[open] ul li:hover{
+	box-shadow: inset 0px 0px 0.1em 0.1em white;
+}
+/*Выпадающее меню*/
+/*шапка*/
+
+/*строка поиска*/
+input[name="search_bar"]{
+	display: block;
+	margin-top:3vh;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 1rem;
+	padding: 0.25rem;
+	border-width: 0.01rem ;
+	outline: none;
+
+}
+section.search_bar{
+	position:sticky;
+	top:10vh;
+	z-index: 1;
+}
+/*строка поиска*/
+
+/*Чаты-общие стили*/
+section.chats{
+	width: 90%;
+	margin: 0px auto;
+	box-sizing: border-box;
+	height: 100%;
+}
+section.chats article[link]{
+	cursor:pointer;
+	border-bottom:0.02rem solid black;
+	background-color: white;
+}
+section.chats article[link]:hover{
+	background: rgb(220, 221, 224);
+}
+section.chats article[link] img{
+	height: 4vmax;
+	width:  4vmax;
+	border-radius: 50%;
+	border: none;
+	margin: 0.5rem;
+}
+section.chats article[link] span.name{
+	font-weight: bolder;
+}
+section.chats article[link]>ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+section.chats article[link]>ul>li{
+	display: inline-block;
+}
+section.chats article[link]>ul>li.name{
+	position: absolute;
+	top:0.5rem;
+	margin-left: 0.5rem;
+}
+section.chats article[link]>ul>li.last_message{
+	position: absolute;
+	bottom: 0.5rem;
+	margin-left: 0.5rem;
+}
+section.chats article[link]>ul>li.icon img{
+	vertical-align: middle;
+}
+section.chats article[link]>ul>li.lm_date{
+	position: absolute;
+	bottom:0.5rem;
+	right: 0.5rem;
+}
+section.chats article[banned]{
+	 background: rgba(256, 256, 256, 0.5);
+}
+article[banned]>ul .icon,article[banned]>ul .name,article[banned]>ul .last_message,article[banned]>ul .lm_date{
+	opacity: 0.5;
+}
+.no_user{
+	display: inline-block;
+	margin: 3rem 40%;
+	box-sizing: border-box;
+	width: 20%;
+	background-color: white;
+	padding: 1rem 0px;
+	border-radius: 0.5rem;
+	text-align: center;
+}
+.options{
+	position: absolute;
+	top:0.5rem;
+	right: 0.5rem;
+}
+.options summary::marker{
+	content: '\2807';
+}
+li.options details[open] summary{
+	text-align: right;
+}
+.options ul{
+	opacity: 1;
+	position: relative;
+	padding: 0.2rem 0px;
+	margin: 0px;
+	list-style: none;
+	background-color: white;
+	text-align: left;
+	box-shadow: 0px 0px 0.1rem 0.01rem grey;
+	border-radius: 0.2rem;
+	z-index: 1;
+}
+
+li.options ul li{
+	padding: 0.2rem 0.4rem;
+	font-size: 1rem;
+	display: block;
+}
+li.options ul li:hover{
+	background-color: lightgrey;
+}
+/*Чаты-общие стили*/

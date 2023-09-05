@@ -1,0 +1,337 @@
+/*полиграфия*/
+html:root{
+	font-size: 2.5vh;
+}
+html, body{
+	margin: 0px;
+	padding: 0px;
+	background-color: lightgrey;
+}
+section::-webkit-scrollbar  {
+  width: 0;
+}
+body::-webkit-scrollbar,.post-creator>textarea[noscroll="true"]::-webkit-scrollbar,.songs ul::-webkit-scrollbar,.songs ul li::-webkit-scrollbar  {
+  width: 0;
+  height: 0;
+}
+/*полиграфия*/
+
+/*шапка*/
+header{
+	border-bottom:0.01rem solid black;
+	box-sizing: border-box;
+	background-color: white;
+	height: 10vh;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+}
+header>ul.user_header{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	height: 10vh;
+}
+header>ul.user_header>li{
+	box-sizing: border-box;
+	display: inline-block;
+	max-height: 8vh;
+	margin:1vh 0px 1vh 1vh;
+	vertical-align: middle;
+}
+header>ul.user_header>li>img.user-photo{
+	box-sizing: border-box;
+	height: 8vh;
+	width: 8vh;
+	border-radius: 50%;
+}
+header ul.user_header>li:last-child{
+	position: absolute;
+	right: 0px;
+	margin-top:0px; 
+}
+/*Выпадающее меню*/
+header ul ul.side-bar-options{
+	list-style: none;
+}
+header ul details[open] summary:focus{
+    outline: none;
+}
+header ul summary::marker{
+	content :"\2630";
+	font-size: 6vh;
+}
+header ul summary{
+	text-align: right;
+	cursor:pointer;
+}
+header details[open]{
+	background-color: white;
+	height: 100vh;
+	border-left:0.1rem solid black;
+}
+header details[open]>ul.side-bar-options>li{
+	text-align: center;
+	border-bottom: 0.1rem solid white;
+	padding: 0.25rem;
+}
+header details[open]>ul{
+	box-sizing: border-box;
+	background-color: lightgrey;
+	padding: 0px;
+	cursor: pointer;
+	width: 15rem;
+	margin-top:1.3rem;
+}
+header ul details[open] ul a{
+	text-decoration:none;
+	color: black;
+	display: inline-block;
+	width: 100%;
+}
+header details[open] ul li:hover{
+	box-shadow: inset 0px 0px 0.1em 0.1em white;
+}
+/*Выпадающее меню*/
+/*шапка*/
+
+/*флексбоксы*/
+.container{
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+	margin-top:1.5rem; 
+	height: 100%;
+}
+
+/*сайдбар с основной*/
+.short-user-data{
+	box-sizing: border-box;
+	margin-right: 1.5em; 
+	width:30%;
+}
+table.short-user-data-table{
+	border-collapse: collapse;
+	background-color: white;
+	box-sizing: border-box;
+	overflow:hidden;
+	width: 100%;
+	table-layout: fixed;
+}
+.short-user-data-table td{
+	line-height: 1.25rem;
+	vertical-align: top;
+	border: 0.1rem solid black;
+	margin: 0px;
+	padding: 0.25rem 0.5rem 0.25rem 0.25rem;
+}
+.songs input{
+	display: inline-block;
+	box-sizing: border-box;
+	border:0.1rem solid black;
+	border-radius: 1rem;
+	padding: 0.15rem;
+	width: 100%;
+	outline: none;
+	font-size: 1rem;
+}
+/*Список песен*/
+#songs-list{
+	box-sizing: border-box;
+	list-style: none;
+	padding: 0px;
+	width: 100%;
+	height: 8em;
+	margin:1em 0px 0px;
+	padding: 0px;
+	overflow-y: auto;
+}
+li.song_list{
+	display: block;
+	cursor: default;
+	white-space: nowrap;
+	border-bottom:0.001em solid black;
+	overflow-x: auto;
+}
+li.song_list:hover{
+	background: rgb(220, 221, 224);
+}
+/*Список песен*/
+
+.value{
+	width: 65%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+.property{
+	width: 35%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+/*сайдбар с основной*/
+
+/*сайдбар с основной инфой
+
+сайдбар с основной инфой*/
+/*основной раздел*/
+.main-info{
+	box-sizing: border-box;
+	width: 60%;
+}
+.main-info article{
+	background-color: white;
+	margin-bottom: 1rem;
+	border-radius: 0.5rem;
+	padding: 1rem;
+	display:block;
+}
+.main-info article{
+	word-wrap: break-word;
+}
+/*создание поста*/
+.post-creator button.submit{
+	display: block; 
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	box-sizing: border-box;
+	height:2rem;
+	font-size: 1.25vmax;
+	border-radius: 0.5rem;
+	outline:none;
+	border-style: solid;
+}
+.post-creator button.submit:active{
+	background-color: rgb(229, 227, 227);
+	border-color: rgb(239, 239, 239);
+}
+.post-creator textarea{
+	display: block;
+	box-sizing: border-box;
+	font-size: 1rem;
+	padding: 0.25rem;
+	border-width: 0.1rem;
+	width: 100%;
+	resize: none;
+}
+.post-creator{
+	margin-bottom:1rem;
+	background-color: white;
+	border-radius: 0.5rem;
+	display:block; 
+	position: relative;
+	padding: 1rem;
+	box-sizing: border-box;
+	height: 8.375rem;
+	font-size: 1.25vmax;
+}
+/*создание поста*/
+.main-info article{
+	padding: 1em;
+	position: relative;
+}
+.main-info article .date_part{
+	display: block;
+	position: absolute;
+	right: 1rem;
+	bottom: 0rem;
+	font-size: 1rem;
+}
+.main-info article .message_part{
+	display: block;
+	margin-bottom: 1em;
+}
+.main-info article .audio_part{
+	display: block;
+	margin-bottom: 1em;
+	outline: none;
+}
+.main-info article section>p{
+	margin: 0px;
+}
+/*шапка поста*/
+section.header_post{
+	margin-bottom: 0.5rem;
+}
+section.header_post img.header_img{
+	height: 4vmax;
+	width:  4vmax;
+	border-radius: 50%;
+	border: none;
+	display: inline-block;
+}
+section.header_post ul{
+	list-style: none;
+	margin:0px;
+	padding: 0px;
+}
+section.header_post>ul>li{
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.nick{
+	margin-left: 1rem;
+	text-decoration: none;
+	color: black;
+}
+.header_post div.delete{
+	position: absolute;
+	right: 1rem;
+	top:1rem;
+	text-align: right;
+	cursor: pointer;
+}
+.header_post div.delete ul{
+	position: relative;
+	display: none;
+	cursor: pointer;
+	padding: 0.2rem 0px;
+	margin: 0px;
+	list-style: none;
+	background-color: white;
+	opacity: 1;
+	text-align: left;
+	box-shadow: 0px 0px 0.1rem 0.01rem grey;
+	border-radius: 0.2rem;
+	z-index: 1;
+}
+div.delete ul li{
+	padding: 0.2rem 0.4rem;
+	font-size: 1rem;
+}
+.header_post div.delete ul li:hover{
+	background-color: lightgrey;
+}
+.header_post div.delete button{
+	padding: 0px;
+	border:none;
+	outline:none;
+	font-size: 1.3rem;
+	background-color: white;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+/*section.header_post li>div.delete{
+	position: absolute;
+	right: 2rem;
+}
+section.header_post button.predelete{
+	display: inline-block;
+	width: 1rem;
+	padding: 0px;
+	position: absolute;
+	top: 1rem;
+	right:1rem;
+	font-size: 1.5rem;
+	border:none;
+	outline: none;
+}*/
+/*шапка поста*/
+/*основной раздел*/
+/*флексбоксы*/
+
+
+/**/
+/**/

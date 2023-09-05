@@ -1,0 +1,288 @@
+/*полиграфия*/
+html:root{
+	font-size: 2.5vh;
+}
+html, body{
+	margin: 0px;
+	padding: 0px;
+	background-color: lightgrey;
+}
+section::-webkit-scrollbar  {
+  width: 0;
+}
+/*полиграфия*/
+
+/*шапка*/
+header{
+	border-bottom:0.01rem solid black;
+	box-sizing: border-box;
+	background-color: white;
+	height: 10vh;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+}
+header>ul.user_header{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+	height: 10vh;
+}
+header>ul.user_header>li{
+	box-sizing: border-box;
+	display: inline-block;
+	max-height: 8vh;
+	margin:1vh 0px 1vh 1vh;
+	vertical-align: middle;
+}
+header>ul.user_header>li>img.user-photo{
+	box-sizing: border-box;
+	height: 8vh;
+	width: 8vh;
+	border-radius: 50%;
+}
+header ul.user_header>li:last-child{
+	position: absolute;
+	right: 0px;
+	margin-top:0px; 
+}
+/*Выпадающее меню*/
+header ul ul.side-bar-options{
+	list-style: none;
+}
+header ul details[open] summary:focus{
+    outline: none;
+}
+header ul summary::marker{
+	content :"\2630";
+	font-size: 6vh;
+}
+header ul summary{
+	text-align: right;
+	cursor:pointer;
+}
+header details[open]{
+	background-color: white;
+	height: 100vh;
+	border-left:0.1rem solid black;
+}
+header details[open]>ul.side-bar-options>li{
+	text-align: center;
+	border-bottom: 0.1rem solid white;
+	padding: 0.25rem;
+}
+header details[open]>ul{
+	box-sizing: border-box;
+	background-color: lightgrey;
+	padding: 0px;
+	cursor: pointer;
+	width: 15rem;
+	margin-top:1.3rem;
+}
+header ul details[open] ul a{
+	text-decoration:none;
+	color: black;
+	display: inline-block;
+	width: 100%;
+}
+header details[open] ul li:hover{
+	box-shadow: inset 0px 0px 0.1em 0.1em white;
+}
+/*Выпадающее меню*/
+/*шапка*/
+
+
+/*Получатель*/
+section.reciever{
+	border:0.01rem solid black;
+	box-sizing: border-box;
+	background-color: white;
+	box-sizing: border-box;
+	position: relative;
+	height: 10vh;
+	width: 90%;
+	margin:2vh 5% 0px 
+}
+section.reciever>ul.reciever_list{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+	list-style: none;
+}
+section.reciever>ul.reciever_list>li>img.image_of_reciever{
+	box-sizing: border-box;
+	height: 8vh;
+	width: 8vh;
+	border-radius: 50%;
+}
+section.reciever>ul.reciever_list>li{
+	cursor: pointer;
+	box-sizing: border-box;
+	display: inline-block;
+	max-height: 8vh;
+	margin:1vh 0px 1vh 1vh;
+	vertical-align: middle;
+}
+section.reciever>ul.reciever_list>li:last-child{
+	position: absolute;
+	right: 0px;
+	margin-top:0px; 
+}
+/*Опции*/
+section.reciever>ul.reciever_list>li{
+	list-style: none;
+}
+section.reciever>ul.reciever_list>li details[open] summary:focus{
+    outline: none;
+}
+section.reciever>ul.reciever_list>li details.options summary::marker{
+	content: '\2807';
+}
+section.reciever>ul.reciever_list>li details.options summary{
+	text-align: right;
+}
+section.reciever>ul.reciever_list>li details.options ul{
+	opacity: 1;
+	position: relative;
+	padding: 0.2rem 0px;
+	margin: 0px;
+	list-style: none;
+	background-color: white;
+	text-align: left;
+	box-shadow: 0px 0px 0.1rem 0.01rem grey;
+	border-radius: 0.2rem;
+	z-index: 1;
+}
+
+section.reciever>ul.reciever_list>li details.options ul li{
+	padding: 0.2rem 0.4rem;
+	font-size: 1rem;
+	display: block;
+}
+section.reciever>ul.reciever_list>li details.options ul li:hover{
+	background-color: lightgrey;
+}
+/*Опции*/
+/*Получатель*/
+
+/*Окно с сообщениями*/
+section.messages{
+	box-sizing: border-box;
+	height: 77.85vh;
+}
+section.message_area{
+	padding:0px 1em;
+	box-sizing: border-box;
+	width: 90%;
+	height: 68vh;
+	margin: 0px 5%;
+	background-color: white;
+	border:0.01rem solid black;
+	border-bottom: none;
+	overflow-y: auto;
+}
+[blocked] div{
+	opacity: 0.5;
+}
+section[blocked]{
+	background: rgba(256, 256, 256, 0.5);
+}
+[blocked]>ul.reciever_list>li>img{
+	opacity: 0.5;
+}
+[blocked]>ul.reciever_list>li>span{
+	opacity: 0.5;
+}
+section.message_area div{
+	box-sizing: border-box;
+	width: 50%;
+	margin: 0.5em 0px;
+}
+section.message_area div[author="reciever"]{
+	margin-right: 50%; 
+}
+section.message_area div[author="sender"]{
+	margin-left: 50%; 
+	text-align: right;
+}
+section.message_area article .message_part{
+	display: inline-block;
+	border: 0.01rem solid black;
+	box-sizing: border-box;
+	border-radius: 0.5em;
+	padding: 0.3em;
+	position: relative;
+	word-break:break-word;
+}
+section.message_area article .date_part{
+	display: block;
+	font-size: 0.6em;
+
+}
+section.message_area div[status="false"] article .message_part{
+	background-color: lightgrey;
+}
+section.message_area article p{
+	margin: 0px;
+}
+/*Окно с сообщениями*/
+/*Cтрока ввода*/
+section.sender{
+	overflow-y: visible;
+	cursor: pointer;
+	position: relative;
+	border:0.01rem solid black;
+	box-sizing: border-box;
+	height: 9.85vh;
+	width: 100%;	
+	background-color: white;
+	border-bottom: none;
+}
+section.sender textarea{
+	resize: none;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 0.1rem;
+	font-size: 1rem;
+	border:0.01rem solid black;
+	border-radius: 0.5rem;
+	outline:none;
+	overflow: auto;
+	width: 90%;
+	margin: 0px
+}
+section.sender details.add>summary::marker{
+	content:"\1F4CE"
+}
+section.sender details.add>summary{
+		text-align: center;
+}
+section.sender span{
+	cursor: pointer;
+	width: 5%;
+	display: inline-block;
+	vertical-align: top;
+	height: 3vw;
+	padding: 0px;
+	text-align: center;
+}
+section.sender details.add{
+	width: 5%;
+	display: inline-block;
+	vertical-align: top;
+}
+/*Cтрока ввода
+section.sender button{
+	padding: 0em;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	height: 2em;
+	width: 2em;
+}
+section.sender details.add{
+	position: absolute;
+	top:0px;
+	left: 0px;
+}

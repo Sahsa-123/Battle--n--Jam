@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>B`n`J registration</title>
+	<meta encoding="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css\styles_for_reg_and_log.css">
+</head>
+<body>
+	<header>
+		<ul>
+			<li><img src="css\photoes\BnJ_logo.jpg" alt="Ошибка на сервере"></li>
+			<li><h1>Battle `n` Jam</h1></li>
+		</ul>
+	</header>
+	<main>
+		<h2>Приветствуем тебя, музыкант!</h2>
+		<p>	
+			Добро пожаловать в семью Battle `n` Jam.<br>
+			Заполни форму ниже и начни играть
+		</p>
+		<form action="запиши сюда адрес сервера" enctype="multipart/form-data" method="POST" target="self" name="registration_form" autocomplete="off">
+			<section class="server-data">
+				<p class="sub_h">Введите личные данные</p>		
+				Электронная почта<br><input name="email" type="email" required="true"><br>
+				Имя пользователя<br><input name="nick" type="text" required="true"><br>
+				Пароль<br><input name="password" type="password" required="true"><br>
+				Пароль<br><input name="validatoin_password" type="password" required="true"><br>
+				Возраст<br><input name="age" type="number" min="0"><br>
+			</section>
+			<section class="genre">
+				<p class="sub_h">Выберите жанр в котором вы игрете(возможен выбор нескольких опций)</p>
+				<details>
+					<summary>Джаз</summary>
+					<input type="checkbox" name="Avant-garde_Jazz" value="true"> Авангардный джаз <br>
+					<input type="checkbox" name="Afro-Cuban_Jazz" value="true"> Афро-кубинский джаз <br>
+					<input type="checkbox" name="Bebop" value="true"> Бибоп <br>
+					<input type="checkbox" name="Bossanova" value="true"> Босанова <br>
+					<input type="checkbox" name="Jazz_Manush" value="true"> Джаз-мануш <br>
+					<input type="checkbox" name="Jazz_Rap" value="true"> Джаз-рэп <br>
+					<input type="checkbox" name="Jazz_Funk" value="true"> Джаз-фанк <br>
+					<input type="checkbox" name="Jazz_Fusion" value="true"> Джаз-фьюжн <br>
+					<input type="checkbox" name="Dixieland" value="true"> Диксиленд <br>
+					<input type="checkbox" name=" Cool_Jazz" value="true"> Кул-джаз <br>
+					<input type="checkbox" name="Latin_American_Jazz" value="true"> Латиноамериканский джаз <br>
+					<input type="checkbox" name="Modal_Jazz" value="true"> Модальный джаз <br>
+					<input type="checkbox" name="New_Orleans_Jazz" value="true"> Новоорлеанский джаз <br>
+					<input type="checkbox" name="Nu_Jazz" value="true"> Ню-джаз <br>
+					<input type="checkbox" name="Punk_Jazz" value="true"> Панк-джаз <br>
+					<input type="checkbox" name="Postbop" value="true"> Постбоп <br>
+					<input type="checkbox" name="Swing" value="true"> Свинг <br>
+					<input type="checkbox" name="Ska_Jazz" value="true"> Ска-джаз <br>
+					<input type="checkbox" name="Smooth_jazz" value="true"> Smooth jazz <br>
+					<input type="checkbox" name="Soul-Jazz" value="true"> Соул-джаз <br>
+					<input type="checkbox" name="Stride" value="true"> Страйд <br>
+					<input type="checkbox" name="Free_Jazz" value="true"> Фри-джаз <br>
+					<input type="checkbox" name="Hard_Bop" value="true"> Хард-боп <br>
+					<input type="checkbox" name="Jazz_Fusion" value="true"> Джаз-фьюжн <br>
+					<input type="checkbox" name="Chicago_Jazz" value="true"> Чикагский джаз <br>
+					<input type="checkbox" name="Acid_Jazz" value="true"> Эйсид-джаз<br>
+				</details>
+				<details>
+					<summary>Рок</summary>
+					<input type="checkbox" name="Alternative_rock" value="true"> Альтернативный рок<br>
+					<input type="checkbox" name="Art_rock" value="true"> Арт-рок<br>
+					<input type="checkbox" name="Beat" value="true"> Бит<br>
+					<input type="checkbox" name="Garage_Rock" value="true"> Гаражный рок<br>
+					<input type="checkbox" name="Glam_Rock" value="true"> Глэм-рок<br>
+					<input type="checkbox" name="Gothic_Rock" value="true"> Готик-рок<br>
+					<input type="checkbox" name="Grunge" value="true"> Гранж<br>
+					<input type="checkbox" name="Indie_Rock" value="true"> Инди-рок<br>
+					<input type="checkbox" name="Instrumental_Rock" value="true"> Инструментальный рок<br>
+					<input type="checkbox" name="Math_rock" value="true"> Математический рок<br>
+					<input type="checkbox" name="Noise_rock" value="true"> Нойз-рок<br>
+					<input type="checkbox" name="Pub_rock" value="true"> Паб-рок<br>
+					<input type="checkbox" name="Punk_rock" value="true"> Панк-рок<br>
+					<input type="checkbox" name="Post-punk" value="true"> Пост-панк<br>
+					<input type="checkbox" name="Proto-punk" value="true"> Прото-панк<br>
+					<input type="checkbox" name="Psychedelic_rock" value="true"> Психоделический рок<br>
+					<input type="checkbox" name="Southern_Rock" value="true"> Сатерн-рок<br>
+					<input type="checkbox" name="Surf_Rock" value="true"> Сёрф-рок<br>
+					<input type="checkbox" name="Soft_Rock" value="true"> Софт-рок<br>
+					<input type="checkbox" name="Space_Rock" value="true"> Спейс-рок<br>
+					<input type="checkbox" name="Stoner_Rock" value="true">Стоунер-рок<br>
+					<input type="checkbox" name="Folk_Rock" value="true"> Фолк-рок<br>
+					<input type="checkbox" name="Hard_Rock" value="true"> Хард-рок<br>
+					<input type="checkbox" name="Heartland_Rock" value="true"> Хартленд-рок<br>
+					<input type="checkbox" name="Experimental_Rock" value="true"> Экспериментальный рок<br>
+					<input type="checkbox" name="Christian_Rock" value="true"> Христианский рок<br>
+				</details>
+				<details>
+					<summary>Металл</summary>
+					<input type="checkbox" name="VanguardMetal" value="true"> Авангард-метал<br>
+					<input type="checkbox" name="BlackMetal" value="true"> Блэк-метал<br>
+					<input type="checkbox" name="Viking_metal" value="true"> Викинг-метал<br>
+					<input type="checkbox" name="Glam_metal" value="true"> Глэм-метал<br>
+					<input type="checkbox" name="Gothic_metal" value="true"> Готик-метал<br>
+					<input type="checkbox" name="Groove_metal" value="true"> Грув-метал<br>
+					<input type="checkbox" name="Dark_metal" value="true"> Дарк-метал<br>
+					<input type="checkbox" name="Doom_metal" value="true"> Дум-метал<br>
+					<input type="checkbox" name="Death_metal" value="true"> Дэт-метал<br>
+					<input type="checkbox" name="CelticMetal" value="true"> Кельтик-метал<br>
+					<input type="checkbox" name="Mat-metal" value="true"> Мат-метал<br>
+					<input type="checkbox" name="Neoclassical_metal" value="true"> Неоклассический метал<br>
+					<input type="checkbox" name="OrientalMetal" value="true"> Ориентал-метал<br>
+					<input type="checkbox" name="PowerMetal" value="true"> Пауэр-метал<br>
+					<input type="checkbox" name="PaganMetal" value="true"> Пейган-метал<br>
+					<input type="checkbox" name="Post_metal" value="true"> Пост-метал<br>
+					<input type="checkbox" name="Progressive_metal" value="true"> Прогрессивный метал<br>
+					<input type="checkbox" name="Symphonic_metal" value="true"> Симфоник-метал<br>
+					<input type="checkbox" name="SludgeMetal" value="true"> Сладж-метал<br>
+					<input type="checkbox" name="Speed_metal" value="true"> Спид-метал<br>
+					<input type="checkbox" name="StonerMetal" value="true"> Стоунер-метал<br>
+					<input type="checkbox" name="Thrash_metal" value="true"> Трэш-метал<br>
+					<input type="checkbox" name="Folk_metal" value="true"> Фолк-метал<br>
+					<input type="checkbox" name="Heavy_metal" value="true"> Хеви-метал<br>
+				</details>
+				<details>
+					<summary>Блюз</summary>
+					<input type="checkbox" name="Delta_Blues" value="true">  Дельта-блюз<br>
+					<input type="checkbox" name="Electric_Blues" value="true"> Электрик-блюз<br>
+					<input type="checkbox" name="Chicago_Blues" value="true"> Чикаго-блюз<br>
+					<input type="checkbox" name="Texas_Blues" value="true"> Техас-блюз<br>
+					<input type="checkbox" name="Country_Blues" value="true"> Кантри-блюз<br>
+				</details>
+				<details>
+					<summary>Поп</summary>
+					<input type="checkbox" name="Europop" value="true"> Европоп<br>
+					<input type="checkbox" name="Dance-pop" value="true"> Данс-поп<br>
+					<input type="checkbox" name="Electropop" value="true"> Электропоп<br>
+					<input type="checkbox" name="Mashup" value="true"> Мэшап<br>
+					<input type="checkbox" name="Operatic_pop" value="true"> Operatic pop<br>
+					<input type="checkbox" name="Sophisti-pop" value="true"> Sophisti-pop<br>
+					<input type="checkbox" name="Space_age_pop" value="true"> Space age pop<br>
+					<input type="checkbox" name="Sunshine_pop" value="true"> Sunshine pop<br>
+					<input type="checkbox" name="Tin_pop" value="true"> Тин-поп<br>
+					<input type="checkbox" name="Traditional_pop_music" value="true"> Традиционная поп-музыка<br>
+					<input type="checkbox" name="J-pop" value="true"> J-pop<br>
+					<input type="checkbox" name="K-pop" value="true"> K-pop<br>
+					<input type="checkbox" name="C-pop" value="true"> C-pop<br>
+					<input type="checkbox" name="Q-pop" value="true"> Q-pop<br>
+					<input type="checkbox" name="Mandopop" value="true"> Mandopop<br>
+				</details>
+			</section>
+			<section class="instrument">
+				<p class="sub_h">Выберите инструмент, на котором вы играете (возможен выбор нескольких опций)</p>
+				<input type="checkbox" name="solo-guitar" value="true"> Соло-гитара<br>
+				<input type="checkbox" name="rythm-guitar" value="true"> Ритм-гитара<br>
+				<input type="checkbox" name="guitar" value="true"> Соло и ритм - гитара<br>
+				<input type="checkbox" name="bass" value="true"> Бас-гитара<br>
+				<input type="checkbox" name="vocals" value="true"> Вокал<br>
+				<input type="checkbox" name="drums" value="true"> Ударные<br>
+			</section>
+				<input type="submit" value="Зарегистрироваться">
+		</form>
+	</main>
+</body>
+</html>
